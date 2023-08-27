@@ -13,8 +13,16 @@ EXPOSE 80
 CMD /usr/sbin/nginx -g "daemon off;"
 
 
+#Docker image building command 
+docker build -t my_first_image .
 
+#Docker run command to start container with the port 80 enabled to access the container
+docker run -d --name dhoni -p 80:80 ff55898ed291
 
+enable the port 80 in AWS security groups inbond rules
+use the IP address of the docker host and check in the browser
+
+===============================================================================================================================================================
 QUESTION 2
 
 
